@@ -1,0 +1,9 @@
+Fonts used in this design:
+
+Font: Alfa Slab
+Author: JM Solé
+Url: http://www.fontsquirrel.com/fonts/alfa-slab
+
+Font: Bebas Neue
+Author: Fontfabric
+Url: http://www.fontsquirrel.com/fonts/bebas-neue
