@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --website-grey : #F5F5F5;
+    --website-orange: #FC8A06;
+    --website-black: #03081F;
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* white-space: nowrap; */
+}
+
+html , body {
+    width: 100%;
+}
+
+main {
+    max-width: 1600px;
+    margin: auto;
+}
+/* Responsive items */
+
+.responsive-menu-nav-links {
+    display: none;
+}
+
+.responsive-offer-button {
+    display: none;
+}
+
+.responsive-offer-button button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: white;
+    border: 2px solid black;
+}
+
+/* knowus-container */
+
+.knowus-container .responsive-buttons {
+    display: none;
+}
+
+.knowus-container .responsive-buttons button{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: var(--website-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+/* Navbar */
+
+
+header {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+nav {
+    margin: auto;
+    height: 80px;
+    width: 95%;
+    max-width: 1600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .nav-links {
+    width: 70%;
+    margin-right: 20px;
+}
+
+nav .nav-links ul {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .nav-links ul a {
+    text-decoration: none;
+    color: #03081F;
+    background-color: white;
+    padding: 10px 10px;
+    border-radius: 50px;
+    white-space: nowrap;
+}
+
+nav .nav-links ul li {
+    list-style-type: none;
+}
+
+nav .nav-links ul .active {
+    background-color: var(--website-orange);
+    color: white;
+}
+
+nav .nav-links ul .hover:hover {
+    background-color: var(--website-orange);
+    color: white;
+}
+
+nav .nav-links ul .login-signup {
+    list-style-type: none;
+    padding: 10px;
+    width: auto;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: var(--website-black);
+    color: white;
+}
+
+
+/* Now let’s see some common breakpoints for widths of devices:
+
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV */
+
+/* Mobile devices (320px — 480px) */
+@media screen and (max-width: 480px) {
+    
+    nav {
+        align-items: center;
+        border-bottom: 1px solid rgb(0, 0, 0);
+    }
+    
+    .nav-links {
+        display: none;
+    }
+
+    .responsive-menu-nav-links {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        border-left: 1px solid black;
+    }
+
+    .responsive-menu-nav-links img {
+        width: 70%;
+    }
+}
+
+/* iPads, Tablets (481px — 768px) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    /* Your tablet styles here */
+
+        nav {
+        align-items: center;
+        border-bottom: 1px solid black;
+    }
+    
+    .nav-links {
+        display: none;
+    }
+
+    .responsive-menu-nav-links {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        border-left: 1px solid black;
+    }
+
+    .responsive-menu-nav-links img {
+        width: 70%;
+    }
+}
+
+/* Small screens, laptops (769px — 1024px) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Your small screen styles here */
+
+        nav {
+        align-items: center;
+        border-bottom: 1px solid black;
+    }
+    
+    .nav-links {
+        display: none;
+    }
+
+    .responsive-menu-nav-links {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        border-left: 1px solid black;
+    }
+
+    .responsive-menu-nav-links img {
+        width: 70%;
+    }
+}
+
+/* Desktops, large screens (1025px — 1200px) */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    /* Your large screen styles here */
+}
+
+/* Extra large screens, TV (1201px and more) */
+@media only screen and (min-width: 1201px) {
+    /* Your extra large screen styles here */
+}
+
+
+
+

@@ -1,0 +1,728 @@
+
+
+:root {
+    --website-grey : #F5F5F5;
+    --website-orange: #FC8A06;
+    --website-3rd-banner: #D9D9D9;
+}
+
+
+.res-offer-heading {
+    display: none;
+}
+
+/* Main */
+
+/* Banner */
+
+.banner {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 50px;
+    font-size: 1.0416666666666667vw;
+}
+
+.banner img {
+    width: 95%;
+}
+
+.banner .banner-description {
+    position: absolute;
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    font-size: clamp(16px, 3vw, 50px);
+}
+
+/* offer-container */
+
+.offer-container {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.offer-container-upper {
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.offer-container-upper .offer-foods-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.offer-container-upper .offer-foods-buttons button {
+    padding: 10px 10px;
+    border-radius: 50px;
+    border: 3px solid transparent;
+    background-color: white;
+    white-space: nowrap;
+}
+
+.offer-container-upper .offer-foods-buttons button:hover {
+    border: 3px solid var(--website-orange);
+}
+
+.offer-container-lower {
+    display: flex;
+    gap: 10px;
+}
+
+.offer-container-lower .offer-container-card img {
+    width: 100%;
+}
+
+
+/* categories */
+
+.categories {
+    margin: auto;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.categories h3 {
+    margin-bottom: 40px;
+}
+
+    /* categories-cards */
+
+.categories-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.categories-cards .card {
+    background-color: var(--website-grey);
+    height: 266px;
+    border-radius: 10px;
+}
+
+.categories-cards .card .categories-text {
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+/* popular-restaurants-container */
+
+.popular-restaurants-container {
+    margin: auto;
+    width: 95%;
+    margin-bottom: 50px;
+}
+
+.popular-restaurants-container .popular-restaurants-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex: 1;
+}
+
+.popular-restaurants-container h3 {
+    margin-bottom: 40px;
+}
+
+/* second-banner */
+
+.second-banner {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.second-banner img{
+    width: 100%;
+}
+
+/* partner-conatiner */
+
+.partner-conatiner {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 50px;
+    flex: 1;
+}
+
+.partner-conatiner .partner-card img{
+    width: 100%;
+}
+
+/* knowus-container */
+
+.knowus-container {
+    width: 95%;
+    min-width: 365px;
+    margin: auto;
+    padding: 50px 30px;
+    border-radius: 10px;
+    background-color: var(--website-3rd-banner);
+    margin-bottom: 50px;
+}
+
+.upper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.upper h3 {
+    font-size: clamp(1rem, 2.5vw , 2rem);
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.buttons button {
+    padding: 20px;
+    border-radius: 50px;
+    border: 3px solid transparent;
+    background-color: var(--website-3rd-banner);
+    font-size: 1rem;
+}
+
+.buttons button:hover {
+    border: 3px solid var(--website-orange);
+}
+
+.lower {
+    background-color: white;
+    border-radius: 10px;
+    padding: 50px 20px;
+    display: flex;
+}
+
+.freq-content {
+    height: 285px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 10px;
+    font-size: 1vw;
+}
+
+.freq-content p {
+    text-align: center;
+    font-size: clamp(14px, 1vw ,1rem);
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50px;
+    padding: 5px 0;
+    font-size: clamp(1rem, 1.2vw , 1.5rem);
+}
+
+.freq-content p:hover {
+    background-color: var(--website-orange);
+}
+
+.services {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    font-size: 1vw;
+}
+
+.service {
+    width: 100%;
+    min-width: 238px;
+    height: 285px;
+    text-align: center;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0 10px;
+    font-size: clamp(16px, 1vw ,1rem);
+}
+
+.service img {
+    width: 100%;
+    max-width: 128px;
+}
+
+/* brief-com-decription */
+
+.brief-com-decription {
+    margin: auto;
+    width: 95%;
+    height: 158px;
+    background-color: var(--website-orange);
+    color: var(--website-grey);
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.strips {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    font-size: 1vw;
+}
+
+.strip {
+    font-size: clamp(2rem, 1.9vw ,2rem);
+    text-align: center;
+}
+
+
+/* Now let’s see some common breakpoints for widths of devices:
+
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV */
+
+@media screen and (max-width: 375px) {
+    .offer-container-upper {
+        flex-direction: column;
+    }
+}
+
+/* Mobile devices (320px — 480px) */
+@media screen and (max-width: 480px) {
+
+    /* offer-container */
+
+        /* offer-container-upper */
+
+    .res-offer-heading {
+        display: block;
+    }
+
+    .non-res-offer-heading {
+        display: none;
+    }
+
+    .offer-container-upper h4 {
+        white-space: nowrap;
+        font-size: 16px;
+    }
+
+    .offer-foods-buttons button{
+        display: none;
+    }
+    
+    .responsive-offer-button {
+        display: block;
+    }
+
+    .responsive-offer-button button {
+        width: 132px;
+        font-size: 10px;
+    }
+
+    .responsive-offer-button button {
+        width: 132px;
+        font-size: 10px;
+    }
+
+        /* offer-container-lower */
+
+    .offer-container-lower {
+        flex-direction: column;
+    }
+
+    .offer-container-card {
+        width: 100%;
+    }
+
+    /* categories */
+
+    .categories-cards {
+        flex-wrap: wrap;
+        background-color: var(--website-3rd-banner);
+        padding: 50px 0;
+    }
+
+    .categories-cards {
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .categories-cards .card img {
+        width: 189px;
+    }
+
+    .categories-cards .card {
+        height: 230px;
+    }
+
+    /* popular-restaurants-container */
+
+    .popular-restaurants-container .popular-restaurants-cards {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .popular-restaurants-container .popular-restaurants-cards img {
+        width: 189px;
+    }
+
+    /* partner-conatiner */
+
+    .partner-conatiner {
+        flex-direction: column;
+    }
+
+    /* knowus-container */
+
+    .lower {
+        flex-direction: column;
+    }
+
+    .services {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    .knowus-container .buttons {
+        display: none;
+    }
+
+    .knowus-container .responsive-buttons {
+        display: block;
+    }
+
+    /* brief-com-decription */
+
+    .brief-com-decription {
+        height: 799px;
+    }
+
+    .strips {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+}
+
+/* iPads, Tablets (481px — 768px) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    /* Your tablet styles here */
+
+        /* offer-container */
+
+        /* offer-container-upper */
+
+    .res-offer-heading {
+        display: block;
+    }
+
+    .non-res-offer-heading {
+        display: none;
+    }
+
+    .offer-container-upper h4 {
+        white-space: nowrap;
+        font-size: 16px;
+    }
+
+    .offer-foods-buttons button{
+        display: none;
+    }
+    
+    .responsive-offer-button {
+        display: block;
+    }
+
+    .responsive-offer-button button {
+        width: 132px;
+        font-size: 10px;
+    }
+
+        /* offer-container-lower */
+
+    .offer-container-card {
+        width: 100%;
+    }
+
+    /* categories */
+
+    .categories-cards {
+        flex-wrap: wrap;
+        background-color: var(--website-3rd-banner);
+        padding: 50px 0;
+    }
+
+    .categories-cards {
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .categories-cards .card img {
+        width: 189px;
+    }
+
+    .categories-cards .card {
+        height: 230px;
+    }
+
+    /* popular-restaurants-container */
+
+    .popular-restaurants-container .popular-restaurants-cards {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .popular-restaurants-container .popular-restaurants-cards img {
+        width: 189px;
+    }
+
+    /* partner-conatiner */
+
+    .partner-conatiner {
+        flex-direction: column;
+    }
+
+    /* knowus-container */
+
+    .lower {
+        flex-direction: column;
+    }
+
+    .services {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    .knowus-container .buttons {
+        display: none;
+    }
+
+    .knowus-container .responsive-buttons {
+        display: block;
+    }
+
+    /* brief-com-decription */
+
+    .brief-com-decription {
+        height: 799px;
+    }
+
+    .strips {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
+
+/* Small screens, laptops (769px — 1024px) */
+@media screen and (max-width: 1024px) {
+    /* Your small screen styles here */
+
+    /* offer-container */
+
+        /* offer-container-upper */
+
+    .res-offer-heading {
+        display: block;
+    }
+
+    .non-res-offer-heading {
+        display: none;
+    }
+
+    .offer-container-upper h4 {
+        white-space: nowrap;
+        font-size: 16px;
+    }
+
+    .responsive-offer-button button {
+        width: 132px;
+        font-size: 10px;
+    }
+
+        /* offer-container-lower */
+
+    .offer-container-card {
+        width: 100%;
+    }
+
+    /* categories */
+
+    .categories-cards {
+        flex-wrap: wrap;
+        background-color: var(--website-3rd-banner);
+        padding: 50px 0;
+    }
+
+    .categories-cards {
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .categories-cards .card img {
+        width: 189px;
+    }
+
+    .categories-cards .card {
+        height: 230px;
+    }
+
+    /* popular-restaurants-container */
+
+    .popular-restaurants-container .popular-restaurants-cards {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .popular-restaurants-container .popular-restaurants-cards img {
+        width: 189px;
+    }
+
+    /* partner-conatiner */
+
+    /* knowus-container */
+
+    .lower {
+        flex-direction: column;
+    }
+
+    .services {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    .knowus-container .buttons {
+        display: none;
+    }
+
+    .knowus-container .responsive-buttons {
+        display: block;
+    }
+
+    /* brief-com-decription */
+
+    .brief-com-decription {
+        height: 799px;
+    }
+
+    .strips {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
+
+/* Desktops, large screens (1025px — 1200px) */
+@media  screen and (max-width: 1200px) {
+    /* Your large screen styles here */
+
+    /* categories */
+
+    .categories-cards {
+        flex-wrap: wrap;
+        background-color: var(--website-3rd-banner);
+        padding: 50px 0;
+    }
+
+    .categories-cards {
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .categories-cards .card img {
+        width: 189px;
+    }
+
+    .categories-cards .card {
+        height: 230px;
+    }
+
+    /* popular-restaurants-container */
+
+    .popular-restaurants-container .popular-restaurants-cards {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .popular-restaurants-container .popular-restaurants-cards img {
+        width: 189px;
+    }
+
+    /* partner-conatiner */
+
+    /* knowus-container */
+
+    .lower {
+        flex-direction: column;
+    }
+
+    .services {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    /* brief-com-decription */
+
+    .brief-com-decription {
+        height: 799px;
+    }
+
+    .strips {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
+
+/* Extra large screens, TV (1201px and more) */
+@media only screen and (min-width: 1201px) {
+    /* Your extra large screen styles here */
+
+    /* categories */
+
+    .categories-cards {
+        flex-wrap: wrap;
+        background-color: var(--website-3rd-banner);
+        padding: 50px 0;
+    }
+
+    .categories-cards {
+        gap: 2.8vw;
+        justify-content: center;
+    }
+
+    .categories-cards .card img {
+        width: 189px;
+    }
+
+    .categories-cards .card {
+        height: 230px;
+    }
+
+    /* popular-restaurants-container */
+
+    .popular-restaurants-container .popular-restaurants-cards {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .popular-restaurants-container .popular-restaurants-cards img {
+        width: 189px;
+    }
+}

@@ -1,0 +1,221 @@
+
+:root {
+    --website-grey : #F5F5F5;
+    --website-orange: #FC8A06;
+    --website-3rd-banner: #D9D9D9;
+}
+
+
+.banner-container {
+    width: 95%;
+    margin: auto;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.banner-container .main-banner {
+    width: 100%;
+}
+
+.banner-container .banner-img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 581px;
+}
+
+/* all-offers */
+
+.all-offers {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 40px;
+    margin-bottom: 50px;
+}
+
+.all-offers h3 {
+    color: black;
+}
+
+/* gorup-1-container */
+
+.gorup-1-container {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.group-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.group-buttons button {
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: 0;
+    background-color: black;
+    color: white;
+}
+
+/* restaurants-offers-conatiner */
+
+.restaurants-offers-conatiner {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.offers-cards {
+    display: flex;
+    gap: 20px;
+}
+
+.offers-cards .card img{
+    width: 100%;
+}
+
+/* burgers-container */
+
+.burgers-container {
+    width: 95%;
+    margin: auto;
+}
+
+.burgers-container h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.burgers-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.burgers-cards .burger-card {
+    width: 450px;
+}
+
+.burgers-cards .burger-card img {
+    width: 100%;
+}
+
+/* fries-containers */
+
+#fries-container {
+    width: 95%;
+    margin: auto;
+}
+
+#fries-container h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+#fries-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#fries-cards .fries-card {
+    width: 450px;
+}
+
+#fries-cards img {
+    width: 100%;
+}
+
+/* cold-drinks-container */
+
+#cold-drinks-container {
+    width: 95%;
+    margin: auto;
+}
+
+#cold-drinks-container h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+#cold-drinks-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#cold-drinks-cards .cold-drinks-card {
+    width: 450px;
+}
+
+#cold-drinks-cards img {
+    width: 100%;
+}
+
+/* timmings-container */
+
+#timmings-container {
+    width: 95%;
+    height: 659px;
+    margin: auto;
+    background-color: #FBFBFB;
+    border-radius: 10px;
+
+    margin-bottom: 50px;
+}
+
+#timmings-container-cards {
+    height: inherit;
+    display: flex;
+}
+
+#timmings-container-cards img {
+    width: 35px;
+}
+
+#timmings-container-cards h3 {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.timming-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+
+    /* top | right | bottom | left */
+    padding: 100px 40px 100px 40px
+}
+
+.timming-card p {
+    line-height: 3;
+}
+
+.dark {
+    background-color: #03081F;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px ;
+    color: #fff;
+}
+
+
+
+
+/* map */
+
+.map {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.map img {
+    width: 100%;
+}

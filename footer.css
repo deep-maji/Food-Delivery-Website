@@ -1,0 +1,235 @@
+:root {
+    --website-grey : #F5F5F5;
+    --website-orange: #FC8A06;
+    --website-3rd-banner: #D9D9D9;
+}
+
+footer {
+    width: 100%;
+    background-color: var(--website-grey);
+    /* height: 444px; */
+}
+
+.footer-conatiner {
+    margin: auto;
+    width: 95%;
+    max-width: 1600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-sections {
+    display: flex;
+    /* height: 371px; */
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--website-grey);
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 0;
+    width: 80vw;
+}
+
+.footer-logo-container p{
+    width: 311px;
+    height: 46px;
+}
+
+.footer-logo {
+    width: 268px;
+}
+
+.playstore-logo {
+    width: 361px;
+}
+
+.footer-section .button-group {
+    display: flex;
+    width: 90%;
+}
+
+.footer-section .button-group input{
+    width: 80%; /* need to responsive */
+    height: 59px;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.footer-section .button-group button{
+    width: 40%; /* need to responsive */
+    height: 59px; /* need to responsive */
+    border-radius: 50px;
+}
+
+.footer-section .external-links {
+    display: flex;
+    gap: 40px;
+}
+
+.footer-section .external-links .link {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-section .external-links .link a {
+    color: black;
+}
+
+
+.credit {
+    height: 73px;
+    margin: auto;
+    margin: auto;
+    background-color: #03081F;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.credit p {
+    font-size: clamp(9px, 1rem , 50px);
+}
+
+.right {
+    gap: 50px;
+    display: flex;
+}
+
+
+
+
+/* Now let’s see some common breakpoints for widths of devices:
+
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV */
+
+/* Mobile devices (320px — 480px) */
+@media screen and (max-width: 480px) {
+
+    .footer-sections {
+        text-align: center;
+        padding-top: 40px;
+        flex-direction: column;
+    }
+
+    .footer-section .button-group {
+        width: auto;
+    }
+
+    .footer-logo-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-section .external-links  {
+        gap: 0;
+    }
+
+    .external-links {
+        flex-direction: column;
+        text-align: left;
+    }
+    
+    .link {
+        margin-bottom: 50px;
+    }
+
+    .right {
+        display: none;
+    }
+    
+}
+
+/* iPads, Tablets (481px — 768px) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    /* Your tablet styles here */
+
+        .footer-sections {
+        text-align: center;
+        padding-top: 40px;
+        flex-direction: column;
+    }
+
+    .footer-section .button-group {
+        width: auto;
+    }
+
+    .footer-logo-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-section .external-links  {
+        gap: 0;
+    }
+
+    .external-links {
+        flex-direction: column;
+        text-align: left;
+    }
+    
+    .link {
+        margin-bottom: 50px;
+    }
+
+    .right {
+        display: none;
+    }
+}
+
+/* Small screens, laptops (769px — 1024px) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Your small screen styles here */
+
+        .footer-sections {
+        text-align: center;
+        padding-top: 40px;
+        flex-direction: column;
+    }
+
+    .footer-section .button-group {
+        width: auto;
+    }
+
+    .footer-logo-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-section .external-links  {
+        gap: 0;
+    }
+
+    .external-links {
+        flex-direction: column;
+        text-align: left;
+    }
+    
+    .link {
+        margin-bottom: 50px;
+    }
+
+    .right {
+        display: none;
+    }
+}
+
+/* Desktops, large screens (1025px — 1200px) */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    /* Your large screen styles here */
+}
+
+/* Extra large screens, TV (1201px and more) */
+@media only screen and (min-width: 1201px) {
+    /* Your extra large screen styles here */
+}
