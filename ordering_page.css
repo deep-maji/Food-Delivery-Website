@@ -398,6 +398,7 @@
     border: 0;
     background-color: #028643;
     color: #fff;
+    cursor: pointer;
 }
 
 .quantity-selection .XL-Large {
