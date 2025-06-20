@@ -1,13 +1,4 @@
 /*
-
-order-food-container
-
-*/
-
-// All Selectors
-
-
-/*
 my-bucket
 */
 
@@ -77,3 +68,59 @@ checkout_items_removes.forEach((checkout_items_remove)=>{
 
     });
 })
+
+
+
+/*
+
+order-food-container
+
+*/
+
+// All Selectors
+let quantity_selection = document.querySelectorAll(".quantity-selection");
+let smalls = document.querySelectorAll(".small");
+let mediums = document.querySelectorAll(".medium");
+let larges = document.querySelectorAll(".large");
+let xl_larges = document.querySelectorAll(".XL-Large");
+
+let bucket_items = document.querySelectorAll("#bucket-items");
+
+// smalls.forEach((small)=>{
+//     small.addEventListener("click",()=>{
+//         let samllItemSize = 12;
+//         let price = small.children[0].innerText.slice(1);
+//         let itemName = small.parentElement.previousElementSibling.firstElementChild.firstElementChild.innerText;
+//         let itemdescription =small.parentElement.previousElementSibling.firstElementChild.lastElementChild.innerText;
+
+//     })
+// })
+
+
+smalls.forEach((small)=>{
+    small.addEventListener("click",()=>{
+        small.classList.toggle("select");
+    })
+})
+
+mediums.forEach((medium)=>{
+    medium.addEventListener("click",()=>{
+        medium.classList.toggle("select");
+    })
+})
+
+larges.forEach((large)=>{
+    large.addEventListener("click",()=>{
+        large.classList.toggle("select");
+    })
+})
+
+xl_larges.forEach((xl_large)=>{
+    xl_large.addEventListener("click",()=>{
+        xl_large.classList.toggle("select")
+    })
+})
+
+
+
+

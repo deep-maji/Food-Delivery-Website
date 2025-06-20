@@ -362,6 +362,10 @@
     gap: 50px;
 }
 
+.food-item-image {
+    margin-left: auto;
+}
+
 .quantity-selection {
     display: flex;
     gap: 10px;
@@ -384,7 +388,7 @@
     color: #fff;
 }
 
-.quantity-selection .active {
+.quantity-selection .select {
     background-color: #03081F;
     color: #fff;
 }
