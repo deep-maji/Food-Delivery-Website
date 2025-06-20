@@ -83,8 +83,49 @@ let smalls = document.querySelectorAll(".small");
 let mediums = document.querySelectorAll(".medium");
 let larges = document.querySelectorAll(".large");
 let xl_larges = document.querySelectorAll(".XL-Large");
-
+let meal_deals_modal = document.querySelector(".meal-deals-modal");
+let cancel_model = document.querySelector("#cancel");
+let next_step = document.querySelector("#next-step");
 let bucket_items = document.querySelectorAll("#bucket-items");
+
+cancel_model.addEventListener("click",()=>{
+    meal_deals_modal.classList.remove("modal-active");
+})
+
+smalls.forEach((small)=>{
+    small.addEventListener("click",()=>{
+        small.classList.toggle("select");
+        meal_deals_modal.classList.add("modal-active");        
+    })
+})
+
+
+mediums.forEach((medium)=>{
+    medium.addEventListener("click",()=>{
+        medium.classList.toggle("select");
+        meal_deals_modal.classList.add("modal-active"); 
+    })
+})
+
+larges.forEach((large)=>{
+    large.addEventListener("click",()=>{
+        large.classList.toggle("select");
+        meal_deals_modal.classList.add("modal-active"); 
+    })
+})
+
+xl_larges.forEach((xl_large)=>{
+    xl_large.addEventListener("click",()=>{
+        xl_large.classList.toggle("select");
+        meal_deals_modal.classList.add("modal-active"); 
+    })
+})
+
+
+
+
+
+
 
 // smalls.forEach((small)=>{
 //     small.addEventListener("click",()=>{
@@ -95,31 +136,6 @@ let bucket_items = document.querySelectorAll("#bucket-items");
 
 //     })
 // })
-
-
-smalls.forEach((small)=>{
-    small.addEventListener("click",()=>{
-        small.classList.toggle("select");
-    })
-})
-
-mediums.forEach((medium)=>{
-    medium.addEventListener("click",()=>{
-        medium.classList.toggle("select");
-    })
-})
-
-larges.forEach((large)=>{
-    large.addEventListener("click",()=>{
-        large.classList.toggle("select");
-    })
-})
-
-xl_larges.forEach((xl_large)=>{
-    xl_large.addEventListener("click",()=>{
-        xl_large.classList.toggle("select")
-    })
-})
 
 
 

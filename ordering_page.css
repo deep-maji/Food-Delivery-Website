@@ -120,7 +120,7 @@
     border-bottom-right-radius: 10px;
 }
 
-.active {
+#menu-items .items .active {
     background-color: #03081F;
     color: #fff;
 }
@@ -401,8 +401,128 @@
     background-color: #028643;
     color: #fff;
     cursor: pointer;
+
+    transition: .3s ease;
 }
 
 .quantity-selection .XL-Large {
     width: 279px;
+}
+
+/* Modal */
+
+.meal-deals-modal {
+    display: none; /* Hidden by default */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    padding-bottom: 100px;
+    position: fixed; /* Stay in place */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.modal-active {
+    display: block;
+}
+
+#meal-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    width: 1270px;
+    background-color: #fff;
+    border-radius: 12px;
+}
+
+/* Quantity selection section */
+
+#modal-quantity {
+    padding: 50px 100px;
+}
+
+#modal-pizzas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#modal-pizzas .pizzas {
+    width: 100%;
+    /* max-width: 1045px; */
+    height: 15.65%;
+    max-height: 169px;
+    background-color: #D9D9D9;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+#modal-pizzas .pizzas:hover {
+    background-color: #FC8A06;
+}
+
+#modal-pizzas .pizzas .items-img {
+    padding: 0 20px;
+    border-right: 1px solid rgb(122, 122, 122);
+}
+
+#modal-pizzas .pizzas .items-name {
+    margin-right: auto;
+    padding-left: 50px;
+}
+
+#modal-pizzas .pizzas .items-quan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#modal-pizzas .pizzas .items-quan input {
+    outline: none;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    border: 0;
+}
+
+#modal-pizzas .pizzas .items-quan input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#modal-pizzas .pizzas .items-quan img {
+    width: 35px;
+    height: 35px;
+}
+
+/* modal-btns */
+
+#modal-conf-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-btns {
+    width: 200px;
+    height: 70px;
+    background-color: #028643;
+    border: 0;
+    border-radius: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    color: #fff;
 }
