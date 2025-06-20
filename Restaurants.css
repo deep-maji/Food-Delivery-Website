@@ -39,6 +39,32 @@
     color: black;
 }
 
+.all-offers #search-more {
+    width: 40%;
+    max-width: 344px;
+    min-width: 251.913px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+.all-offers #search-more input {
+    width: 344px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 0;
+    outline: none;
+}
+
+.all-offers #search-more img {
+    cursor: pointer;
+}
+
 /* gorup-1-container */
 
 .gorup-1-container {
@@ -52,10 +78,19 @@
     justify-content: space-between;
 }
 
-.group-buttons button {
+.group-buttons .btns {
     padding: 5px 20px;
     border-radius: 20px;
     border: 0;
+    transition: all 0.3s ease-out;
+}
+
+.group-buttons .btns:hover {
+    background-color: black;
+    color: white;
+}
+
+.group-buttons .active {
     background-color: black;
     color: white;
 }
