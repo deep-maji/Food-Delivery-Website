@@ -507,6 +507,8 @@
     text-align: center;
     border-radius: 10px;
     border: 0;
+    font-size: 20px;
+    font-weight: 900;
 }
 
 #modal-pizzas .pizzas .items-quan input::-webkit-outer-spin-button,
@@ -518,6 +520,7 @@ input::-webkit-inner-spin-button {
 #modal-pizzas .pizzas .items-quan img {
     width: 35px;
     height: 35px;
+    cursor: pointer;
 }
 
 /* modal-btns */

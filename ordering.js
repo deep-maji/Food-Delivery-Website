@@ -77,6 +77,42 @@ order-food-container
 
 */
 
+// Set selected as a (green color) to selected.
+function setSelected(inputs) {
+    inputs.forEach((input)=>{
+        if (input.value != "") {
+            input.style = "border: 3px solid green;"
+            console.log(input.value);
+        }
+        
+        if (input.value == "0") {
+            input.style = "border: none;"
+        }
+    })    
+}
+
+function visibleOnlyOne(inputs) {
+    inputs.forEach((input)=>{
+        if (input.value == "" || input.value == "0") {
+            let minusImgaeButton = input.previousElementSibling;
+            let plusImageButton = input.nextElementSibling;
+            input.style = "opacity: 0.5; pointer-events: none;"
+            minusImgaeButton.style = "opacity: 0.5; pointer-events: none;"
+            plusImageButton.style = "opacity: 0.5; pointer-events: none;"
+        }
+    })
+}
+
+function visibleAll(inputs) {
+    inputs.forEach((input)=>{
+        let minusImgaeButton = input.previousElementSibling;
+            let plusImageButton = input.nextElementSibling;
+            input.style = "opacity: 1; pointer-events: auto;"
+            minusImgaeButton.style = "opacity: 1; pointer-events: auto;"
+            plusImageButton.style = "opacity: 1; pointer-events: auto;"
+    })
+}
+
 // All Selectors
 let quantity_selection = document.querySelectorAll(".quantity-selection");
 let smalls = document.querySelectorAll(".small");
@@ -92,6 +128,53 @@ let addToBucketModal = document.querySelector(".add-to-bucket-modal");
 let add_to_bucket_modal_conf_btn_back = document.querySelector("#add-to-bucket-modal-conf-btn-back");
 let customize_pizza_modal_conf_btn_back = document.querySelector("#customize-pizza-modal-conf-btn-back");
 
+// Qunantity Set to input type number box
+let inputBoxes = document.querySelectorAll(".items-quan input");
+let emptyInputs = 0;
+
+inputBoxes.forEach((inputBox)=>{
+    let minusImgaeButton = inputBox.previousElementSibling;
+    let plusImageButton = inputBox.nextElementSibling;
+    minusImgaeButton.addEventListener("click",()=>{
+        if (parseInt(inputBox.value) > 0){
+            let tempqun = parseInt(inputBox.value);
+            tempqun--;
+            inputBox.value = `${tempqun}`;
+        }
+
+        if(inputBox.value == "0") {
+            visibleAll(inputBoxes);
+        }
+        
+    })
+    plusImageButton.addEventListener("click",(e)=>{
+        if(parseInt(inputBox.value) < 10) {
+            let tempqun = parseInt(inputBox.value);
+            tempqun++;
+            inputBox.value = `${tempqun}`;
+            visibleOnlyOne(inputBoxes);
+        }
+        else if (inputBox.value == "") {
+            inputBox.value = "1";
+            visibleOnlyOne(inputBoxes);
+        }
+        visibleOnlyOne(inputBoxes);
+    })
+
+    inputBox.addEventListener("keypress",(e)=>{
+        if (e.key === "Enter") {
+            if (parseInt(inputBox.value) > 10) {
+                inputBox.value = "10";
+            }
+            else if (parseInt(inputBox.value) < 0) {
+                inputBox.value = "";
+            }
+        }
+    })
+
+})
+
+
 // Cancels the full flow. 
 // This applies to all cancel buttons in the process.
 cancel_models.forEach((cancel_model)=>{
@@ -105,8 +188,25 @@ cancel_models.forEach((cancel_model)=>{
 
 // Take from "meal deals modal" to "Customize Pizza" modal
 meal_deals_modal_nextStep.addEventListener("click",()=>{
-    customize_pizza_modal.classList.add("customize-pizza-modal-active");
-    meal_deals_modal.classList.remove("modal-active");
+    let flag = false
+    inputBoxes.forEach((inputBox)=>{
+        if (inputBox.value == "" || inputBox.value == "0") {
+            if (flag == false) {
+                inputBox.style = "border: 3px solid red;"
+            }
+        }
+        else {
+            customize_pizza_modal.classList.add("customize-pizza-modal-active");
+            meal_deals_modal.classList.remove("modal-active");
+            inputBoxes.forEach((inputBox)=>{
+                inputBox.style = "border: 0;"
+            })
+            flag = true;
+        }
+    })
+    if (flag == true) {
+        setSelected(inputBoxes);
+    }
 })
 
 // This is the Add Toppings modal (also known as the "Customize Pizza" modal).
@@ -127,11 +227,8 @@ add_to_bucket_modal_conf_btn_back.addEventListener("click",()=>{
 customize_pizza_modal_conf_btn_back.addEventListener("click",()=>{
     meal_deals_modal.classList.add("modal-active"); 
     customize_pizza_modal.classList.remove("customize-pizza-modal-active");
+    visibleOnlyOne(inputBoxes);
 })
-
-
-
-
 
 
 smalls.forEach((small)=>{
@@ -162,6 +259,26 @@ xl_larges.forEach((xl_large)=>{
         meal_deals_modal.classList.add("modal-active"); 
     })
 })
+
+
+
+
+
+
+
+// Add to Bucket
+
+function addItemToBucket() {
+    
+}
+
+let add_to_bucket_modal_next_ADD = document.querySelector("#add-to-bucket-modal-next-ADD");
+
+add_to_bucket_modal_next_ADD.addEventListener("click",()=>{
+    addToBucketModal.classList.remove("add-to-bucket-modal-active");
+
+})
+
 
 
 
