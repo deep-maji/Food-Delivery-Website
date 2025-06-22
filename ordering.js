@@ -84,13 +84,55 @@ let mediums = document.querySelectorAll(".medium");
 let larges = document.querySelectorAll(".large");
 let xl_larges = document.querySelectorAll(".XL-Large");
 let meal_deals_modal = document.querySelector(".meal-deals-modal");
-let cancel_model = document.querySelector("#cancel");
-let next_step = document.querySelector("#next-step");
-let bucket_items = document.querySelectorAll("#bucket-items");
+let cancel_models = document.querySelectorAll(".cancel");
+let meal_deals_modal_nextStep = document.querySelector("#meal-deals-modal-next-step");
+let customize_pizza_modal =document.querySelector(".customize-pizza-modal");
+let customizePizzaModalNextStep = document.querySelector("#customize-pizza-modal-next-step");
+let addToBucketModal = document.querySelector(".add-to-bucket-modal");
+let add_to_bucket_modal_conf_btn_back = document.querySelector("#add-to-bucket-modal-conf-btn-back");
+let customize_pizza_modal_conf_btn_back = document.querySelector("#customize-pizza-modal-conf-btn-back");
 
-cancel_model.addEventListener("click",()=>{
+// Cancels the full flow. 
+// This applies to all cancel buttons in the process.
+cancel_models.forEach((cancel_model)=>{
+    cancel_model.addEventListener("click",()=>{
+    meal_deals_modal.classList.remove("modal-active");
+    customize_pizza_modal.classList.remove("customize-pizza-modal-active");
+    addToBucketModal.classList.remove("add-to-bucket-modal-active");
+})
+})
+
+
+// Take from "meal deals modal" to "Customize Pizza" modal
+meal_deals_modal_nextStep.addEventListener("click",()=>{
+    customize_pizza_modal.classList.add("customize-pizza-modal-active");
     meal_deals_modal.classList.remove("modal-active");
 })
+
+// This is the Add Toppings modal (also known as the "Customize Pizza" modal).
+// After this, it navigates to the "Add to Bucket" modal.
+// Then, it removes itself from the screen.
+customizePizzaModalNextStep.addEventListener("click",()=>{
+    addToBucketModal.classList.add("add-to-bucket-modal-active");
+    customize_pizza_modal.classList.remove("customize-pizza-modal-active");
+})
+
+// Take back from "add to bucket Modal" to "Customize Pizza" modal
+add_to_bucket_modal_conf_btn_back.addEventListener("click",()=>{
+    addToBucketModal.classList.remove("add-to-bucket-modal-active");
+    customize_pizza_modal.classList.add("customize-pizza-modal-active");
+})
+
+// Take back from "Customize Pizza" modal to "meal deals modal"
+customize_pizza_modal_conf_btn_back.addEventListener("click",()=>{
+    meal_deals_modal.classList.add("modal-active"); 
+    customize_pizza_modal.classList.remove("customize-pizza-modal-active");
+})
+
+
+
+
+
 
 smalls.forEach((small)=>{
     small.addEventListener("click",()=>{
@@ -122,20 +164,6 @@ xl_larges.forEach((xl_large)=>{
 })
 
 
-
-
-
-
-
-// smalls.forEach((small)=>{
-//     small.addEventListener("click",()=>{
-//         let samllItemSize = 12;
-//         let price = small.children[0].innerText.slice(1);
-//         let itemName = small.parentElement.previousElementSibling.firstElementChild.firstElementChild.innerText;
-//         let itemdescription =small.parentElement.previousElementSibling.firstElementChild.lastElementChild.innerText;
-
-//     })
-// })
 
 
 
