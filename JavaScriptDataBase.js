@@ -1,9 +1,29 @@
 // I have not any database its work as a little database, hehe.
 
-const dataBase = {
+export const dataBase = {
     pizza: {
         vegPizza: {
+            Margherita: {
+                name: "Margherita",
+                small: {
+                    price: 10,
+                    size: 10
+                },
+                medium: {
+                    price: 15,
+                    size: 12
+                },
+                large: {
+                    price: 20,
+                    size: 14
+                },
+                XlLarge: {
+                    price: 24,
+                    size: 16
+                }
+            },
             FarmHousePizza: {
+                name: "Farm House Pizza",
                 small: {
                     price: 12,
                     size: 10
@@ -22,6 +42,7 @@ const dataBase = {
                 }
             },
             FarmHouseXtremePizza: {
+                name: "Farm House Xtreme Pizza",
                 small: {
                     price: 14,
                     size: 10
@@ -42,7 +63,27 @@ const dataBase = {
         },
         nonVegPizza: {
             totalNonVegPizza: 5,
+            Margherita: {
+                name: "Margherita",
+                small: {
+                    price: 11,
+                    size: 10
+                },
+                medium: {
+                    price: 16,
+                    size: 12
+                },
+                large: {
+                    price: 21,
+                    size: 14
+                },
+                XlLarge: {
+                    price: 25,
+                    size: 16
+                }
+            },
             Polo: {
+                name: "Polo Pizza",
                 small: {
                     price: 15,
                     size: 10
@@ -61,6 +102,7 @@ const dataBase = {
                 }
             },
             MeatFiest: {
+                name: "Meat Fiest",
                 small: {
                     price: 16,
                     size: 10
@@ -79,6 +121,7 @@ const dataBase = {
                 }
             },
             Hawaiian: {
+                name: "Hawaiian Pizza",
                 small: {
                     price: 14,
                     size: 10
@@ -97,6 +140,7 @@ const dataBase = {
                 }
             },
             Toscana: {
+                name: "Toscana",
                 small: {
                     price: 15,
                     size: 10
@@ -117,4 +161,3 @@ const dataBase = {
         }
     }
 };
-

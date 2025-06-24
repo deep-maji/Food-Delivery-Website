@@ -18,10 +18,27 @@
 }
 
 .banner-container .banner-img {
-    position: absolute;
     top: 0px;
     left: 0px;
     width: 581px;
+}
+
+/* open-until-in-banner-div */
+
+#open-until-in-banner-div {
+    background-color: #FC8A06;
+    color: #fff;
+    width: 20%;
+    min-width: 210px;
+    height: 61px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 0px 20px 20px 0;
+    position: absolute;
+    top: 76%;
+    font-size: 16px;
 }
 
 /* all-offers */

@@ -342,7 +342,6 @@
 /* food-items-container */
 
 .food-items {
-    height: 403px;
     padding: 30px;
     background-color: #FDFDFD;
     border-radius: 10px;
@@ -366,47 +365,21 @@
     margin-left: auto;
 }
 
-.quantity-selection {
+.add-to-my-bucket {
+    height: 100px;
     display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-.quantity-selection div {
-    width: 182px;
-    height: 58px;
-    display: flex;
-    justify-content: space-between;
+    justify-content: left;
     align-items: center;
+}
+
+.add-to-my-bucket button {
+    height: 50px;
     padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #03081F;
-}
-
-.quantity-selection div:hover {
-    background-color: #03081F;
-    color: #fff;
-}
-
-.quantity-selection .select {
-    background-color: #03081F;
-    color: #fff;
-}
-
-.quantity-selection div button {
-    width: 90px;
-    height: 39px;
-    border-radius: 5px;
-    border: 0;
+    border-radius: 15px;
     background-color: #028643;
+    border: 0.5px solid #000;
     color: #fff;
     cursor: pointer;
-
-    transition: .3s ease;
-}
-
-.quantity-selection .XL-Large {
-    width: 279px;
 }
 
 /* Modal */
@@ -650,4 +623,103 @@ input::-webkit-inner-spin-button {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+/* Modal 1.1 */
+
+.select-size-modal {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 100px 0;
+    overflow: auto;
+    
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.9);
+
+}
+
+.select-size-modal-active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+#size-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#select-size {
+    padding: 50px 100px;
+}
+
+/* quantity-selection */
+
+.quantity-selection-select-size-modal {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.quantity-selection {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.quantity-selection div {
+    width: 182px;
+    height: 58px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #03081F;
+}
+
+.quantity-selection div:hover {
+    background-color: #03081F;
+    color: #fff;
+}
+
+.quantity-selection .select {
+    background-color: #03081F;
+    color: #fff;
+}
+
+.quantity-selection div button {
+    width: 90px;
+    height: 39px;
+    border-radius: 5px;
+    border: 0;
+    background-color: #028643;
+    color: #fff;
+    cursor: pointer;
+
+    transition: .3s ease;
+}
+
+.quantity-selection .XL-Large {
+    width: 279px;
+}
+
+.not-selected {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.quantity-selection .warning-border {
+    border: 3px solid #FC8A06;
+}
+
+.green-border {
+    border: 3px solid green;
 }
