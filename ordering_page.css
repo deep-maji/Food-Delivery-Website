@@ -723,3 +723,23 @@ input::-webkit-inner-spin-button {
 .green-border {
     border: 3px solid green;
 }
+
+
+/* Mobile devices (320px — 480px) */
+@media (max-width: 480px) {
+    #order-container {
+        flex-wrap: wrap;
+    }
+
+
+}
+
+/* iPads, Tablets (481px — 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+
+}
+
+/* Small screens, laptops (769px — 1024px) */
+@media only screen and (min-width: 769px) and (max-width: 1080px) {
+    
+}

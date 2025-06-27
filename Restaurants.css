@@ -211,7 +211,6 @@
 
 #timmings-container {
     width: 95%;
-    height: 659px;
     margin: auto;
     background-color: #FBFBFB;
     border-radius: 10px;
@@ -253,11 +252,9 @@
 .dark {
     background-color: #03081F;
     border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px ;
+    border-bottom-right-radius: 10px;
     color: #fff;
 }
-
-
 
 
 /* map */
@@ -270,4 +267,74 @@
 
 .map img {
     width: 100%;
+}
+
+
+/* Mobile devices (320px — 480px) */
+@media (max-width: 480px) {
+        #timmings-container-cards {
+        flex-wrap: wrap;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .dark {
+        border-radius: 10px;
+    }
+
+    .all-offers h3 {
+        font-size: 17px;
+        white-space: nowrap;
+    }
+
+    .all-offers {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .gorup-1-container {
+        display: none;
+    }
+
+    .group-buttons {
+        display: none;
+    }
+
+    .offers-cards {
+        flex-wrap: wrap;
+    }
+    
+}
+
+/* iPads, Tablets (481px — 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    #timmings-container-cards {
+        flex-wrap: wrap;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .dark {
+        border-radius: 10px;
+    }
+
+    .all-offers {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+/* Small screens, laptops (769px — 1024px) */
+@media only screen and (min-width: 769px) and (max-width: 1080px) {
+    #timmings-container-cards {
+        flex-wrap: wrap;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .dark {
+        border-radius: 10px;
+    }
 }
