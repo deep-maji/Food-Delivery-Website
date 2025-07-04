@@ -21,7 +21,7 @@ A responsive and interactive food delivery website built using **HTML**, **CSS**
   - Cart item removal
   - Page interaction
 
-## 🧑‍💻 How to Run
+## How to Run
 
 1. Clone the repo:
    ```bash
